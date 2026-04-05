@@ -1,0 +1,41 @@
+name: audiodockr
+description: A local-first Android music player that uses YouTube as its sole content source via yt-dlp.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.4.9
+  sqflite: ^2.3.0
+  cached_network_image: ^3.3.0
+  google_fonts: ^6.1.0
+  permission_handler: ^11.3.1
+  file_picker: ^8.1.2
+  shared_preferences: ^2.3.2
+  http: ^1.2.2
+  path: ^1.9.1
+  youtube_explode_dart: ^3.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  min_sdk_android: 21
+  image_path: android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/app_icon.png
+    - lib/assets/image_pc.png
+    - lib/assets/image_mobile.png
